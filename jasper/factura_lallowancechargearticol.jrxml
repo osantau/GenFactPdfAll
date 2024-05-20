@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_lallowancechargearticol" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f394fb5f-370c-4381-abcc-cfb4fc1b6a1d">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="L_NO" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="xPath">
+		<![CDATA[/*[local-name()='InvoiceLine']/*[local-name()='Price']/*[local-name()='AllowanceCharge']]]>
+	</queryString>
+	<field name="BT1" class="java.lang.String">
+		<fieldDescription><![CDATA[*[local-name()='ChargeIndicator']]]></fieldDescription>
+	</field>
+	<field name="BT147" class="java.lang.String">
+		<fieldDescription><![CDATA[*[local-name()='Amount']]]></fieldDescription>
+	</field>
+	<field name="BT148" class="java.lang.String">
+		<fieldDescription><![CDATA[*[local-name()='BaseAmount']]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="1" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-1" width="56" height="16" uuid="ba11e3c6-f9cf-4c6a-8276-15d902ec7703"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pretul brut articol\n" + $F{BT148}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="56" y="-1" width="185" height="16" backcolor="#FFFFFF" uuid="2eff572e-9edb-437b-9ae1-f9dc33edfcef"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{BT1}.compareTo("true")==0?"Taxa suplimentara":($F{BT1}.compareTo("TRUE")==0?"Taxa suplimentara la pretul articolului":"Reducere la pretul articolului"))
++"\n" +$F{BT147}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band/>
+	</detail>
+</jasperReport>
