@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_allowancecharge" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_allowancecharge" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="84e2ac89-8046-4d80-a551-98908c63c2b5">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -42,7 +42,7 @@
 		<band/>
 		<band height="35">
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="451" y="25" width="194" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="451" y="25" width="194" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="622eef65-61c5-4d45-8bce-67f5c6ff5bec"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -57,7 +57,7 @@
 				<text><![CDATA[Motiv]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="91" y="25" width="47" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="91" y="25" width="47" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="1361af14-7d17-4687-ba93-b5d5dd485766"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -72,7 +72,7 @@
 				<text><![CDATA[Procent]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="138" y="25" width="95" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="138" y="25" width="95" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="2f3daba4-a372-4707-a4d6-6884119c0125"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -87,7 +87,7 @@
 				<text><![CDATA[Valoare]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="233" y="25" width="118" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="233" y="25" width="118" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="b9cede4a-9067-4018-915a-8b4b8481366f"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -102,7 +102,7 @@
 				<text><![CDATA[Valoarea de baza]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="645" y="25" width="143" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="645" y="25" width="143" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="129d8612-d752-4de7-a82e-8787e9d2c991"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -117,7 +117,7 @@
 				<text><![CDATA[Cota TVA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="351" y="25" width="100" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="351" y="25" width="100" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="c2603178-1293-4897-9ddb-c76219f33e2a"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -132,10 +132,9 @@
 				<text><![CDATA[Codul motivului]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="0" y="10" width="263" height="12" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
-				<box>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="0" y="2" width="788" height="12" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="5891d8d5-c1e3-4358-9bbe-186b7afbf3bc"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -146,16 +145,18 @@
 				<text><![CDATA[Detalierea deducerilor/taxelor suplimentare la nivelul documentului]]></text>
 			</staticText>
 			<line>
-				<reportElement isPrintRepeatedValues="false" x="0" y="22" width="253" height="1" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement isPrintRepeatedValues="false" x="0" y="22" width="253" height="1" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="44eb1bb9-aa85-4e3f-a444-e6f8ab3da5bb"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
 			</line>
 		</band>
 		<band/>
 		<band height="15">
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="0" y="0" width="91" height="10" backcolor="#FFFFFF"/>
-				<box>
+				<reportElement mode="Opaque" x="0" y="0" width="91" height="10" backcolor="#FFFFFF" uuid="4cec40f9-c6a6-4a4a-a7b5-77c28306c6bd"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -167,7 +168,7 @@
 				<textFieldExpression><![CDATA[$F{BT1}.compareTo("true")==0?"TAXA SUPLIMENTARA":($F{BT1}.compareTo("TRUE")==0?"TAXA SUPLIMENTARA":"DEDUCERE")]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="91" y="0" width="47" height="10"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="91" y="0" width="47" height="10" uuid="a653f05a-ff57-4414-8641-579d6fa752d1"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -182,7 +183,7 @@
 				<textFieldExpression><![CDATA[$F{BT94}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="138" y="0" width="95" height="10"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="138" y="0" width="95" height="10" uuid="b6e9dfad-08d6-45af-8b37-bfc5006b9957"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -197,7 +198,7 @@
 				<textFieldExpression><![CDATA[$F{BT92}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="233" y="0" width="118" height="10"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="233" y="0" width="118" height="10" uuid="c3229d56-f747-4511-81ab-69740fddaf26"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -212,7 +213,7 @@
 				<textFieldExpression><![CDATA[$F{BT93}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="451" y="0" width="194" height="10"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="451" y="0" width="194" height="10" uuid="00f90b87-c2ab-4370-a11c-730c9c608ce6"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -227,7 +228,7 @@
 				<textFieldExpression><![CDATA[$F{BT97}]]></textFieldExpression>
 			</textField>
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="645" y="0" width="143" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="645" y="0" width="143" height="10" isRemoveLineWhenBlank="true" uuid="1193caba-bcf8-4834-9a76-960f96738de1"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -236,7 +237,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='AllowanceCharge']/*[loc
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_taxcategory.jasper"]]></subreportExpression>
 			</subreport>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="351" y="0" width="100" height="10"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="351" y="0" width="100" height="10" uuid="090638bb-4d7b-4653-b930-55fea3d24a16"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>

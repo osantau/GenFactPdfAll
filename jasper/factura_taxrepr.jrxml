@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_taxrepr" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
-	<property name="ireport.zoom" value="2.0"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_taxrepr" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="24e41b0f-8a3b-49aa-a55f-3f2e57266dd1">
+	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
@@ -36,10 +36,10 @@
 	<detail>
 		<band height="12" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="0" width="595" height="12" backcolor="#FFFFFF"/>
-				<box>
+				<reportElement mode="Opaque" x="0" y="0" width="577" height="12" backcolor="#FFFFFF" uuid="e69adfa8-5970-4a17-8131-7c3525f71b06"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
+					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -50,12 +50,12 @@
 				<text><![CDATA[Reprezentant fiscal vanzator]]></text>
 			</staticText>
 			<line>
-				<reportElement x="0" y="11" width="108" height="1"/>
+				<reportElement x="0" y="11" width="108" height="1" uuid="1cf75337-b644-4e55-9b1c-ec8fa6a91063"/>
 			</line>
 		</band>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="411" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="0" y="0" width="577" height="10" isRemoveLineWhenBlank="true" uuid="8def5a41-2b39-4e6a-944c-21ed1d6a19c8"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -66,7 +66,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 		</band>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="411" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="0" y="0" width="577" height="10" isRemoveLineWhenBlank="true" uuid="42cf7dcb-7883-4c1d-95f4-cfe3cd109193"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -77,8 +77,8 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 		</band>
 		<band height="10">
 			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10"/>
-				<box>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10" uuid="94697f47-3423-47f6-82a5-db1cf397b8c2"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -91,7 +91,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 				<text><![CDATA[Strada]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="506" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="524" height="10" isRemoveLineWhenBlank="true" uuid="eac27703-c21e-4af6-9e83-5de2642ad9ca"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -108,7 +108,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 		</band>
 		<band height="10">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="524" height="10" isRemoveLineWhenBlank="true" uuid="9f47510a-f5c4-47ab-8897-69be22d0408f"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -125,7 +125,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 		</band>
 		<band height="10">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="395" height="10"/>
+				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="524" height="10" uuid="04dbc061-7a87-44cb-af43-53b3e2119348"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -140,8 +140,8 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 				<textFieldExpression><![CDATA[$F{BT66}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10"/>
-				<box>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10" uuid="0f527c01-f3fb-47ae-b02a-501f56a5f7b7"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -158,7 +158,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 		<band/>
 		<band height="10">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="524" height="10" isRemoveLineWhenBlank="true" uuid="ab064af4-a056-4425-8b31-149a24dce5b6"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -173,8 +173,8 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 				<textFieldExpression><![CDATA[$F{BT67}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10"/>
-				<box>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10" uuid="7c38978a-f9d9-4165-83af-6ecad057659b"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -189,7 +189,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 		</band>
 		<band height="10">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="524" height="10" isRemoveLineWhenBlank="true" uuid="1879ee09-f817-4193-a5b4-6f8e1284b545"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -204,8 +204,8 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 				<textFieldExpression><![CDATA[$F{BT68}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10"/>
-				<box>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10" uuid="5bc04edb-5171-465d-9d7c-68197a971f01"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -220,7 +220,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 		</band>
 		<band height="10">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="53" y="0" width="524" height="10" isRemoveLineWhenBlank="true" uuid="015fd23f-ac2d-42be-90b3-0891d2536ee4"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -235,8 +235,8 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 				<textFieldExpression><![CDATA[$F{BT69}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10"/>
-				<box>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="53" height="10" uuid="5302ac01-d320-46ea-b8c2-42ed89a73bee"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -251,7 +251,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='TaxRepresentativeParty'
 		</band>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="411" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="0" y="0" width="577" height="10" isRemoveLineWhenBlank="true" uuid="96914139-0f64-485d-aed5-5f050b6727af"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>

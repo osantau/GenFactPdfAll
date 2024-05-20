@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_delivery" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_delivery" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e045a7c1-edbc-412f-97fc-ab22c83f7f48">
 	<property name="ireport.zoom" value="2.0"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="52"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<parameterDescription><![CDATA[]]></parameterDescription>
@@ -45,10 +45,10 @@
 	<detail>
 		<band height="22" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="0" width="595" height="12" backcolor="#FFFFFF"/>
-				<box>
+				<reportElement mode="Transparent" x="0" y="0" width="576" height="12" backcolor="#FFFFFF" uuid="8e72dd16-0086-4268-82b2-d3587f3f2982"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
+					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -59,15 +59,14 @@
 				<text><![CDATA[Informatii referitoare la livrare]]></text>
 			</staticText>
 			<line>
-				<reportElement x="0" y="11" width="115" height="1"/>
+				<reportElement x="0" y="11" width="115" height="1" uuid="0146fdbd-71cd-4a24-bbfa-9a1c77fdc9b4"/>
 			</line>
 			<staticText>
-				<reportElement x="0" y="12" width="40" height="10" isRemoveLineWhenBlank="true">
+				<reportElement x="0" y="12" width="40" height="10" isRemoveLineWhenBlank="true" uuid="7307da68-b98c-409a-8abc-274d2510b57c">
 					<printWhenExpression><![CDATA[$F{BT72}.length()>0]]></printWhenExpression>
 				</reportElement>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -78,7 +77,7 @@
 				<text><![CDATA[Data livrarii]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="40" y="12" width="269" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="40" y="12" width="269" height="10" isRemoveLineWhenBlank="true" uuid="c770e7eb-18f4-4738-80ee-10514b0f84e1"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -96,7 +95,7 @@
 		<band/>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="552" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="0" y="0" width="576" height="10" isRemoveLineWhenBlank="true" uuid="c964ffdc-c36c-409e-9650-3457612e512d"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -107,10 +106,9 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 		</band>
 		<band height="21">
 			<staticText>
-				<reportElement x="0" y="0" width="207" height="11"/>
-				<box>
+				<reportElement x="0" y="0" width="207" height="11" uuid="6a915d12-610c-431b-ad2c-1b717a3e8cfb"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -121,10 +119,10 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<text><![CDATA[Adresa livrare]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="11" width="68" height="10" isRemoveLineWhenBlank="true">
+				<reportElement x="0" y="11" width="68" height="10" isRemoveLineWhenBlank="true" uuid="20b67b82-729d-45ff-b109-0b5894c7db8b">
 					<printWhenExpression><![CDATA[$F{BT71}.length()>0]]></printWhenExpression>
 				</reportElement>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -137,7 +135,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<text><![CDATA[Identificatorul locului]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="68" y="11" width="269" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="68" y="11" width="269" height="10" isRemoveLineWhenBlank="true" uuid="95bcf3f5-10a0-47d8-9f36-1c965cdf2ef8"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -158,8 +156,8 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 		<band/>
 		<band height="20">
 			<staticText>
-				<reportElement x="0" y="0" width="40" height="10"/>
-				<box>
+				<reportElement x="0" y="0" width="40" height="10" uuid="c0f93e8d-d2a8-46b0-b8bf-12ea8e6e1a07"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -172,7 +170,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<text><![CDATA[Strada]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="40" y="0" width="478" height="10"/>
+				<reportElement x="40" y="0" width="536" height="10" uuid="429d6861-a082-4302-9c56-9e38c657ec3e"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -187,7 +185,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<textFieldExpression><![CDATA[$F{BT75}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="10" width="40" height="10" isRemoveLineWhenBlank="true">
+				<reportElement x="0" y="10" width="40" height="10" isRemoveLineWhenBlank="true" uuid="89298fa8-d9b2-46e5-a2cf-34ad296f39d9">
 					<printWhenExpression><![CDATA[$F{BT76}.length()>0]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -203,7 +201,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<text><![CDATA[]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="40" y="10" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="40" y="10" width="536" height="10" isRemoveLineWhenBlank="true" uuid="eb9f3db1-ad40-4de1-8f7b-6232a7a1bd06"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -220,7 +218,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 		</band>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="552" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="0" y="0" width="576" height="10" isRemoveLineWhenBlank="true" uuid="15e9702e-7962-4f06-a736-dbd8a5d62406"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -231,7 +229,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 		</band>
 		<band height="10">
 			<textField isBlankWhenNull="true">
-				<reportElement x="40" y="0" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="40" y="0" width="536" height="10" isRemoveLineWhenBlank="true" uuid="48492c60-ee78-4ab4-9d10-6915b596230c"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -246,10 +244,10 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<textFieldExpression><![CDATA[$F{BT77}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="0" width="40" height="10" isRemoveLineWhenBlank="true">
+				<reportElement x="0" y="0" width="40" height="10" isRemoveLineWhenBlank="true" uuid="7a23544e-0a8a-49c5-8209-392a3a8efb4e">
 					<printWhenExpression><![CDATA[$F{BT77}.length()>0]]></printWhenExpression>
 				</reportElement>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -264,7 +262,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 		</band>
 		<band height="10">
 			<textField isBlankWhenNull="true">
-				<reportElement x="40" y="0" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="40" y="0" width="536" height="10" isRemoveLineWhenBlank="true" uuid="afbb6618-9618-4307-bdd4-1cb8b0e5c745"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -279,10 +277,10 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<textFieldExpression><![CDATA[$F{BT78}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="-83" y="0" width="123" height="10" isRemoveLineWhenBlank="true">
-					<printWhenExpression><![CDATA[$F{BT78}.length()>0]]></printWhenExpression>
+				<reportElement x="0" y="0" width="40" height="10" isRemoveLineWhenBlank="true" uuid="0439e78d-ce4f-495d-923c-343b3ef3fcda">
+					<printWhenExpression><![CDATA[$F{BT77}.length()>0]]></printWhenExpression>
 				</reportElement>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -291,14 +289,13 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" size="7" isBold="false"/>
-					<paragraph firstLineIndent="4"/>
 				</textElement>
 				<text><![CDATA[Cod Postal]]></text>
 			</staticText>
 		</band>
 		<band height="10">
 			<textField isBlankWhenNull="true">
-				<reportElement x="40" y="0" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="40" y="0" width="536" height="10" isRemoveLineWhenBlank="true" uuid="920a1496-6cff-4e07-af7f-195fef19fa16"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -313,10 +310,10 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<textFieldExpression><![CDATA[$F{BT79}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="0" width="40" height="10" isRemoveLineWhenBlank="true">
+				<reportElement x="0" y="0" width="40" height="10" isRemoveLineWhenBlank="true" uuid="95e42148-bab5-4373-9d44-95a78e7f3722">
 					<printWhenExpression><![CDATA[$F{BT79}.length()>0]]></printWhenExpression>
 				</reportElement>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -331,12 +328,12 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 		</band>
 		<band height="10">
 			<textField isBlankWhenNull="true">
-				<reportElement x="40" y="0" width="395" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="40" y="0" width="536" height="10" isRemoveLineWhenBlank="true" uuid="57bb8e46-ec0b-457b-894b-1f0aec9146ae"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
@@ -346,10 +343,10 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Delivery']/*[local-name
 				<textFieldExpression><![CDATA[$F{BT80}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="0" width="40" height="10" isRemoveLineWhenBlank="true">
+				<reportElement x="0" y="0" width="40" height="10" isRemoveLineWhenBlank="true" uuid="e0dcd6db-b6d7-4e15-8165-16bef09a19f2">
 					<printWhenExpression><![CDATA[$F{BT80}.length()>0]]></printWhenExpression>
 				</reportElement>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>

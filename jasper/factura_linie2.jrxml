@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_linie2" language="groovy" pageWidth="555" pageHeight="595" orientation="Landscape" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0aea4058-6e4a-400c-a89d-431576843f68">
-	<property name="ireport.zoom" value="4.0"/>
-	<property name="ireport.x" value="0"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_linie2" language="groovy" pageWidth="581" pageHeight="595" orientation="Landscape" columnWidth="581" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0aea4058-6e4a-400c-a89d-431576843f68">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="623"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<parameterDescription><![CDATA[]]></parameterDescription>
@@ -85,10 +85,9 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band splitType="Stretch"/>
 		<band height="5">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="361" height="5" isRemoveLineWhenBlank="true" uuid="5f23744a-3520-4050-9f9f-9e8c42841d65"/>
+				<reportElement positionType="Float" x="0" y="0" width="581" height="5" isRemoveLineWhenBlank="true" uuid="5f23744a-3520-4050-9f9f-9e8c42841d65"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -100,11 +99,9 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='InvoiceLine']/*[local-n
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_lperioada.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band/>
-		<band/>
 		<band height="5">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="361" height="5" isRemoveLineWhenBlank="true" uuid="deb58c10-7490-469c-992f-55be0a11922d"/>
+				<reportElement positionType="Float" x="0" y="0" width="581" height="5" isRemoveLineWhenBlank="true" uuid="deb58c10-7490-469c-992f-55be0a11922d"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -118,7 +115,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='InvoiceLine']/*[local-n
 		</band>
 		<band height="5">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="361" height="5" isRemoveLineWhenBlank="true" uuid="1ca851ef-6578-4af1-a61c-efb4e0008f56"/>
+				<reportElement positionType="Float" x="0" y="0" width="581" height="5" isRemoveLineWhenBlank="true" uuid="1ca851ef-6578-4af1-a61c-efb4e0008f56"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -131,10 +128,9 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='InvoiceLine']/*[local-n
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_lrefcontabila.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band/>
 		<band height="5">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="361" height="5" isRemoveLineWhenBlank="true" uuid="990992cc-81e4-476f-bfef-6f06fece2c94"/>
+				<reportElement positionType="Float" x="0" y="0" width="581" height="5" isRemoveLineWhenBlank="true" uuid="990992cc-81e4-476f-bfef-6f06fece2c94"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -147,10 +143,11 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='InvoiceLine']/*[local-n
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_lorderref.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band/>
 		<band height="5">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="361" height="5" isRemoveLineWhenBlank="true" uuid="ed49a8cf-6d8a-4ac0-b11b-2e04763a7012"/>
+				<reportElement positionType="Float" x="0" y="0" width="581" height="5" isRemoveLineWhenBlank="true" uuid="ed49a8cf-6d8a-4ac0-b11b-2e04763a7012">
+					<printWhenExpression><![CDATA[0==1]]></printWhenExpression>
+				</reportElement>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -163,13 +160,11 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='InvoiceLine']/*[local-n
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_lrefv.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band/>
-		<band/>
-		<band/>
-		<band/>
 		<band height="5">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="361" height="5" isRemoveLineWhenBlank="true" uuid="f0c188c8-1b3a-4963-aa9a-a33580829f56"/>
+				<reportElement positionType="Float" x="0" y="0" width="581" height="5" isRemoveLineWhenBlank="true" uuid="f0c188c8-1b3a-4963-aa9a-a33580829f56">
+					<printWhenExpression><![CDATA[0==1]]></printWhenExpression>
+				</reportElement>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -182,12 +177,5 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='InvoiceLine']/*[local-n
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_lrefc.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band/>
-		<band/>
-		<band/>
-		<band/>
-		<band/>
-		<band height="10"/>
-		<band height="1"/>
 	</detail>
 </jasperReport>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_taxsubtotal" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_taxsubtotal" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2bcbe11e-1c03-4840-add2-ff0e7be4cf54">
 	<property name="ireport.zoom" value="2.0"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="52"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<parameterDescription><![CDATA[]]></parameterDescription>
@@ -40,9 +40,9 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="14" splitType="Stretch">
+		<band height="12" splitType="Stretch">
 			<staticText>
-				<reportElement x="193" y="0" width="42" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="193" y="0" width="42" height="10" isRemoveLineWhenBlank="true" uuid="0ceb608c-da02-4888-8c37-115a7a81c1aa"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -56,8 +56,8 @@
 				<text><![CDATA[Cota TVA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="0" width="90" height="10"/>
-				<box>
+				<reportElement x="0" y="0" width="90" height="10" uuid="beeb6c0c-97b9-4fe8-8270-f169ca26d057"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -70,7 +70,7 @@
 				<text><![CDATA[Codul categoriei de TVA]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="235" y="0" width="42" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="235" y="0" width="42" height="10" isRemoveLineWhenBlank="true" uuid="93b6f9a6-fd8e-412a-8f10-1474aa245070"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -84,7 +84,7 @@
 				<textFieldExpression><![CDATA[$F{BT119}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="90" y="0" width="42" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="90" y="0" width="42" height="10" isRemoveLineWhenBlank="true" uuid="58276f63-fb1d-446f-9fc2-a034fd2a11f4"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -100,8 +100,8 @@
 		</band>
 		<band height="10">
 			<staticText>
-				<reportElement x="0" y="0" width="144" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
-				<box>
+				<reportElement x="0" y="0" width="144" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="509c4023-69e3-40c6-916a-c8e8e7c38891"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -114,7 +114,7 @@
 				<text><![CDATA[Baza de calcul]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="144" y="0" width="62" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement x="144" y="0" width="62" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="75e62bc5-c615-4e5d-97f8-859fc7bfff23"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -128,7 +128,7 @@
 				<text><![CDATA[Valoare TVA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="291" y="0" width="289" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement x="291" y="0" width="289" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="b7d51dff-f48a-4bff-957e-ee4f10e46701"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -142,7 +142,7 @@
 				<text><![CDATA[Motivul scutirii]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="206" y="0" width="85" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement x="206" y="0" width="85" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="013e1bb1-9cd4-49ff-bdca-3fbaa3b84de5"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -156,9 +156,9 @@
 				<text><![CDATA[Codul motivului scutirii]]></text>
 			</staticText>
 		</band>
-		<band height="13">
+		<band height="11">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="291" y="0" width="289" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="291" y="0" width="289" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="2698212e-85b9-473c-931a-4cc1f0490323"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -172,8 +172,8 @@
 				<textFieldExpression><![CDATA[$F{BT120}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="0" width="144" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
-				<box>
+				<reportElement x="0" y="0" width="144" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="23e7d485-6ea8-4ee2-bdb2-8278f003ed8a"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -186,7 +186,7 @@
 				<textFieldExpression><![CDATA[$F{BT116}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="148" y="0" width="58" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement x="144" y="0" width="62" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="ad590f52-b570-4071-89eb-2ccac37bb85b"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -200,7 +200,7 @@
 				<textFieldExpression><![CDATA[$F{BT117}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="206" y="0" width="85" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="206" y="0" width="85" height="10" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="2dc569c1-0f65-437e-a483-8317f3e56a3e"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>

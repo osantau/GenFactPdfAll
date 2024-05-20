@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_billingreference2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
-	<property name="ireport.zoom" value="2.0"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_billingreference2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="5c9d11a7-ec3f-4d90-a86f-a71400d8a09d">
+	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
@@ -24,10 +24,10 @@
 	<detail>
 		<band height="10" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="118" y="0" width="261" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="118" y="0" width="459" height="10" isRemoveLineWhenBlank="true" uuid="01b40946-3be2-4701-b13f-eccf4cfc6d4c"/>
 				<box>
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
+					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -39,12 +39,10 @@
 				<textFieldExpression><![CDATA[$F{BT25}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="0" width="118" height="10" isRemoveLineWhenBlank="true" backcolor="#ECE5E5"/>
-				<box>
+				<reportElement mode="Transparent" x="0" y="0" width="118" height="10" isRemoveLineWhenBlank="true" backcolor="#ECE5E5" uuid="7be58fdf-8489-45e7-baae-b899f09c858c"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
@@ -55,12 +53,12 @@
 		</band>
 		<band height="10">
 			<textField isBlankWhenNull="true">
-				<reportElement x="118" y="0" width="261" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement x="118" y="0" width="459" height="10" isRemoveLineWhenBlank="true" uuid="cf8fa162-5af1-438d-abca-a816c2deb2ce"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
@@ -70,12 +68,10 @@
 				<textFieldExpression><![CDATA[$F{BT26}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="0" width="118" height="10" isRemoveLineWhenBlank="true" backcolor="#ECE5E5"/>
-				<box>
+				<reportElement mode="Transparent" x="0" y="0" width="118" height="10" isRemoveLineWhenBlank="true" backcolor="#ECE5E5" uuid="4ea90b58-c69e-4837-a43e-975fc8de3b86"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_refcontabila" language="groovy" pageWidth="576" pageHeight="842" columnWidth="576" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_refcontabila" language="groovy" pageWidth="581" pageHeight="842" columnWidth="581" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="31b9cb50-bcb3-4f86-b41f-c312262e57e5">
 	<property name="ireport.zoom" value="2.0"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="24"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<parameterDescription><![CDATA[]]></parameterDescription>
@@ -24,10 +24,10 @@
 	<detail>
 		<band height="10" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="139" y="0" width="403" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="139" y="0" width="442" height="10" isRemoveLineWhenBlank="true" uuid="42b51fc3-3e05-4c7e-b1fc-76f642c31d01"/>
 				<box>
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
+					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -38,12 +38,11 @@
 				<textFieldExpression><![CDATA[$F{BT10}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="139" height="10" isRemoveLineWhenBlank="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="139" height="10" isRemoveLineWhenBlank="true" uuid="8d90da15-95ea-408f-b619-0fac51763edb">
 					<printWhenExpression><![CDATA[$F{BT10}.length()>0]]></printWhenExpression>
 				</reportElement>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -56,7 +55,7 @@
 		</band>
 		<band height="10">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="139" y="0" width="403" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement stretchType="RelativeToTallestObject" x="139" y="0" width="442" height="10" isRemoveLineWhenBlank="true" uuid="b791faa7-acbd-4251-9cbc-8db88a1895ca"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -70,12 +69,11 @@
 				<textFieldExpression><![CDATA[$F{BT19}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="139" height="10" isRemoveLineWhenBlank="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="139" height="10" isRemoveLineWhenBlank="true" uuid="b8d9d09d-bea2-4293-82b3-1b0494b6d669">
 					<printWhenExpression><![CDATA[$F{BT19}.length()>0]]></printWhenExpression>
 				</reportElement>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>

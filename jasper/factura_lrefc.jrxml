@@ -23,7 +23,7 @@
 		<band height="10" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="522" height="10" uuid="6a4d0edc-5886-4273-94b5-afcdfda8217d"/>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>

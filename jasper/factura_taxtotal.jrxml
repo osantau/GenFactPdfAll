@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_taxtotal" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fc1ae04b-c228-48a2-95db-f50ef086140e">
 	<property name="ireport.zoom" value="2.0"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="50"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<parameterDescription><![CDATA[]]></parameterDescription>
@@ -22,14 +22,14 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="20" splitType="Stretch">
+		<band height="12" splitType="Stretch">
 			<textField isBlankWhenNull="true">
-				<reportElement x="51" y="5" width="172" height="12" uuid="e0460f17-7347-431b-b2ef-1894027f3af4"/>
+				<reportElement x="123" y="0" width="457" height="12" uuid="e0460f17-7347-431b-b2ef-1894027f3af4"/>
 				<box>
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
-					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.0"/>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
@@ -39,12 +39,12 @@
 				<textFieldExpression><![CDATA[$F{BT110} + " " +$F{BT1}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="5" width="51" height="12" uuid="8d89579e-8022-459b-b755-9c0b2a6f5a67"/>
-				<box>
+				<reportElement x="0" y="0" width="122" height="12" uuid="8d89579e-8022-459b-b755-9c0b2a6f5a67"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
+					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
@@ -52,16 +52,13 @@
 				</textElement>
 				<text><![CDATA[TOTAL TVA]]></text>
 			</staticText>
-			<line>
-				<reportElement x="0" y="19" width="51" height="1" uuid="3f49c5fb-3f41-4cbe-9895-fc3986c89666"/>
-			</line>
 		</band>
 		<band/>
 		<band/>
 		<band height="14">
 			<staticText>
 				<reportElement isPrintRepeatedValues="false" x="0" y="0" width="97" height="12" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" uuid="885326b0-64b8-4b6e-9f54-3f1921cc9696"/>
-				<box>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -76,7 +73,7 @@
 		</band>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="367" height="10" isRemoveLineWhenBlank="true" uuid="59f3b5e0-d182-45ff-ae27-170ed505904f"/>
+				<reportElement positionType="Float" x="0" y="0" width="580" height="10" isRemoveLineWhenBlank="true" uuid="59f3b5e0-d182-45ff-ae27-170ed505904f"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>

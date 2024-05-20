@@ -380,7 +380,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='AccountingSupplierParty
 				<text><![CDATA[Telefon]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="30" width="119" height="10" isRemoveLineWhenBlank="true" uuid="3afef593-cda8-4672-ba42-7af311d90780">
+				<reportElement x="0" y="30" width="32" height="10" isRemoveLineWhenBlank="true" uuid="3afef593-cda8-4672-ba42-7af311d90780">
 					<printWhenExpression><![CDATA[$F{BT43}.length()>0]]></printWhenExpression>
 				</reportElement>
 				<box>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_payeeparty" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
-	<property name="ireport.zoom" value="2.0"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_payeeparty" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="13a8f5bd-5f13-460f-ac29-9e9ceb75d63e">
+	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
@@ -19,10 +19,10 @@
 		<band splitType="Stretch"/>
 		<band height="13">
 			<staticText>
-				<reportElement x="0" y="0" width="111" height="12"/>
-				<box>
+				<reportElement x="0" y="0" width="576" height="12" uuid="f6d6012d-fcad-4486-bbc8-ad029a086188"/>
+				<box leftPadding="2">
 					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
+					<topPen lineWidth="0.25"/>
 					<leftPen lineWidth="0.0"/>
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
@@ -33,12 +33,12 @@
 				<text><![CDATA[Beneficiarul platii]]></text>
 			</staticText>
 			<line>
-				<reportElement x="0" y="11" width="71" height="1"/>
+				<reportElement x="0" y="11" width="71" height="1" uuid="39ccedd2-c2ba-4fa4-9747-bab0a5249861"/>
 			</line>
 		</band>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="336" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="0" y="0" width="576" height="10" isRemoveLineWhenBlank="true" uuid="dbfbcc9b-f3bf-4be0-b615-ab836992a1be"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -52,7 +52,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='PayeeParty']/*[local-na
 		<band/>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="336" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="0" y="0" width="576" height="10" isRemoveLineWhenBlank="true" uuid="b1eab248-3ce0-41af-9ee9-97c6ac6a2690"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -64,7 +64,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='PayeeParty']/*[local-na
 		<band/>
 		<band height="10">
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="336" height="10" isRemoveLineWhenBlank="true"/>
+				<reportElement positionType="Float" x="0" y="0" width="576" height="10" isRemoveLineWhenBlank="true" uuid="00b8362b-a62d-4a10-821e-4814a08fcd92"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
