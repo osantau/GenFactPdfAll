@@ -139,7 +139,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_accountingcustomerparty.jasper"]]></subreportExpression>
 			</subreport>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="258" y="171" width="323" height="12" backcolor="#CCCCCC" uuid="ce16072b-b5b0-4526-accb-eac5ada17ae4"/>
+				<reportElement mode="Transparent" x="285" y="171" width="296" height="12" backcolor="#CCCCCC" uuid="ce16072b-b5b0-4526-accb-eac5ada17ae4"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -154,7 +154,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<textFieldExpression><![CDATA[$F{BT1}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="177" y="171" width="82" height="12" backcolor="#CCCCCC" uuid="4339a6fa-29fa-416b-a720-4325a5142766"/>
+				<reportElement mode="Transparent" x="203" y="171" width="82" height="12" backcolor="#CCCCCC" uuid="4339a6fa-29fa-416b-a720-4325a5142766"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -169,7 +169,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<textFieldExpression><![CDATA[$F{BT3}.compareTo("380")==0?"Nr. factura":($F{BT3}.compareTo("381")==0?"Nr. nota de creditare":($F{BT3}.compareTo("384")==0?"Nr. factura corectata":($F{BT3}.compareTo("389")==0?"Nr. autofactura":$F{BT3})))]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="257" y="183" width="324" height="12" backcolor="#CCCCCC" uuid="1880de1b-dae4-4c81-ba29-92e9137c14fe"/>
+				<reportElement mode="Transparent" x="285" y="183" width="296" height="12" backcolor="#CCCCCC" uuid="1880de1b-dae4-4c81-ba29-92e9137c14fe"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -184,7 +184,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<textFieldExpression><![CDATA[$V{v_InvType}.get($F{BT3})!=null?$V{v_InvType}.get($F{BT3}):$F{BT3}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Transparent" x="177" y="183" width="82" height="12" backcolor="#CCCCCC" uuid="a74858da-5b9a-4a5f-9d8b-8afbb5601817"/>
+				<reportElement mode="Transparent" x="203" y="183" width="82" height="12" backcolor="#CCCCCC" uuid="a74858da-5b9a-4a5f-9d8b-8afbb5601817"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -199,7 +199,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<text><![CDATA[Tip Factura]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="177" y="195" width="82" height="12" backcolor="#CCCCCC" uuid="857cb8f8-6518-4ade-8819-ee60a5ddef18"/>
+				<reportElement mode="Transparent" x="203" y="195" width="82" height="12" backcolor="#CCCCCC" uuid="857cb8f8-6518-4ade-8819-ee60a5ddef18"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -214,7 +214,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<text><![CDATA[Data facturii]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="257" y="195" width="103" height="12" backcolor="#CCCCCC" uuid="cdc18437-40bd-439e-862a-e422068167c2"/>
+				<reportElement mode="Transparent" x="285" y="195" width="75" height="12" backcolor="#CCCCCC" uuid="cdc18437-40bd-439e-862a-e422068167c2"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -229,7 +229,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<textFieldExpression><![CDATA[$F{BT2}!=null ? new SimpleDateFormat("dd.MM.yyyy").format(new SimpleDateFormat("yyyy-MM-dd").parse($F{BT2})):""]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Transparent" x="177" y="207" width="81" height="12" backcolor="#CCCCCC" uuid="87346d64-330d-47a5-a726-9af577ae2e36"/>
+				<reportElement mode="Transparent" x="203" y="207" width="82" height="12" backcolor="#CCCCCC" uuid="87346d64-330d-47a5-a726-9af577ae2e36"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -244,7 +244,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<text><![CDATA[Data scadenta ]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="257" y="207" width="103" height="12" backcolor="#CCCCCC" uuid="b45d9111-cb16-4179-925a-8c9226f741f6"/>
+				<reportElement mode="Transparent" x="285" y="207" width="75" height="12" backcolor="#CCCCCC" uuid="b45d9111-cb16-4179-925a-8c9226f741f6"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
