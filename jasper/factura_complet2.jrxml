@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_complet2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="581" leftMargin="7" rightMargin="7" topMargin="8" bottomMargin="7" uuid="f8a6e9d5-31bc-48dd-9690-05854365aefc">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="144"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["D:\\validatoare_10_2019\\generare_pdf_din_xml\\jrxml\\"]]></defaultValueExpression>
 	</parameter>
@@ -466,17 +466,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name(
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_allowancecharge.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band height="10">
-			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="0" width="581" height="10" isRemoveLineWhenBlank="true" uuid="bf0f1422-ecf4-4b51-bfd7-20f57919577f"/>
-				<subreportParameter name="SUBREPORT_DIR">
-					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
-				</subreportParameter>
-				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)
-$P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name()='PaymentMeans']")]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_paymentmeans.jasper"]]></subreportExpression>
-			</subreport>
-		</band>
+		<band/>
 		<band height="10">
 			<subreport isUsingCache="true">
 				<reportElement positionType="Float" x="0" y="0" width="581" height="10" isRemoveLineWhenBlank="true" uuid="21499ab3-7b4d-41be-ae92-9f1b42e5e02a"/>
@@ -655,9 +645,9 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 		</band>
 	</pageFooter>
 	<summary>
-		<band height="111" splitType="Stretch">
+		<band height="92" splitType="Stretch">
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="123" y="65" width="458" height="12" backcolor="#FFFFFF" uuid="f84ed754-9a22-47d8-9088-9da8f13767c1"/>
+				<reportElement mode="Transparent" x="123" y="36" width="458" height="12" backcolor="#FFFFFF" uuid="f84ed754-9a22-47d8-9088-9da8f13767c1"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -672,7 +662,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<textFieldExpression><![CDATA[$F{BT106}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="123" y="5" width="458" height="12" backcolor="#FFFFFF" uuid="6cbe69b9-8514-4378-a753-ccb634279d5d"/>
+				<reportElement mode="Transparent" x="123" y="0" width="458" height="12" backcolor="#FFFFFF" uuid="6cbe69b9-8514-4378-a753-ccb634279d5d"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -687,22 +677,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<textFieldExpression><![CDATA[$F{BT109}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="123" y="17" width="458" height="12" backcolor="#FFFFFF" uuid="e3a1266f-abb5-480b-8f76-e36dab703e0d"/>
-				<box>
-					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.25"/>
-					<leftPen lineWidth="0.25"/>
-					<bottomPen lineWidth="0.25"/>
-					<rightPen lineWidth="0.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="9" isBold="true"/>
-					<paragraph firstLineIndent="4"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{BT112}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="123" y="53" width="458" height="12" backcolor="#FFFFFF" uuid="b782af3b-8baa-4883-afec-c063dd834f7e"/>
+				<reportElement mode="Transparent" x="123" y="24" width="458" height="12" backcolor="#FFFFFF" uuid="b782af3b-8baa-4883-afec-c063dd834f7e"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -717,7 +692,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<textFieldExpression><![CDATA[$F{BT107}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="123" y="77" width="458" height="12" backcolor="#FFFFFF" uuid="de8ed388-5737-4d73-8f13-1d8024a27156"/>
+				<reportElement mode="Transparent" x="123" y="48" width="458" height="12" backcolor="#FFFFFF" uuid="de8ed388-5737-4d73-8f13-1d8024a27156"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -732,7 +707,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<textFieldExpression><![CDATA[$F{BT108}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="123" y="41" width="458" height="12" backcolor="#FFFFFF" uuid="aa5d7f94-bb1f-4c93-a930-639eaf78a820"/>
+				<reportElement mode="Transparent" x="123" y="12" width="458" height="12" backcolor="#FFFFFF" uuid="aa5d7f94-bb1f-4c93-a930-639eaf78a820"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -747,22 +722,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<textFieldExpression><![CDATA[$F{BT113}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="123" y="29" width="458" height="12" backcolor="#FFFFFF" uuid="cc6f9855-214f-44b5-86dd-d86abd47179f"/>
-				<box>
-					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.25"/>
-					<leftPen lineWidth="0.25"/>
-					<bottomPen lineWidth="0.25"/>
-					<rightPen lineWidth="0.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="9" isBold="true"/>
-					<paragraph firstLineIndent="4"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{BT115}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="123" y="89" width="458" height="12" backcolor="#FFFFFF" uuid="f37b80be-4646-46a4-8b83-2aefdaffda3a"/>
+				<reportElement mode="Transparent" x="123" y="60" width="458" height="12" backcolor="#FFFFFF" uuid="f37b80be-4646-46a4-8b83-2aefdaffda3a"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -777,22 +737,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<textFieldExpression><![CDATA[$F{BT114}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="29" width="122" height="12" backcolor="#FFFFFF" uuid="6c2b8fc0-87aa-46ee-8b66-b72a37e8584b"/>
-				<box>
-					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.25"/>
-					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.25"/>
-					<rightPen lineWidth="0.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="8" isBold="true"/>
-					<paragraph firstLineIndent="4"/>
-				</textElement>
-				<text><![CDATA[TOTAL PLATA]]></text>
-			</staticText>
-			<staticText>
-				<reportElement mode="Transparent" x="0" y="65" width="122" height="12" backcolor="#FFFFFF" uuid="bb5514d5-0fc5-4525-b344-0e21bcc3bd4a"/>
+				<reportElement mode="Transparent" x="0" y="36" width="122" height="12" backcolor="#FFFFFF" uuid="bb5514d5-0fc5-4525-b344-0e21bcc3bd4a"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -807,7 +752,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<text><![CDATA[TOTAL NET]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="41" width="122" height="12" backcolor="#FFFFFF" uuid="2bba1308-e1f8-4abf-b2c4-56dcd00f00d6"/>
+				<reportElement mode="Transparent" x="0" y="12" width="122" height="12" backcolor="#FFFFFF" uuid="2bba1308-e1f8-4abf-b2c4-56dcd00f00d6"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -822,7 +767,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<text><![CDATA[SUMA PLATITA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="77" width="122" height="12" backcolor="#FFFFFF" uuid="9cb658a8-6337-46dc-ac19-decdba944650"/>
+				<reportElement mode="Transparent" x="0" y="48" width="122" height="12" backcolor="#FFFFFF" uuid="9cb658a8-6337-46dc-ac19-decdba944650"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -837,7 +782,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<text><![CDATA[TOTAL TAXE SUPLIMENTARE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="89" width="122" height="12" backcolor="#FFFFFF" uuid="252db392-ce45-4b69-8636-454036cd3517"/>
+				<reportElement mode="Transparent" x="0" y="60" width="122" height="12" backcolor="#FFFFFF" uuid="252db392-ce45-4b69-8636-454036cd3517"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -852,22 +797,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<text><![CDATA[VALOARE DE ROTUNJIRE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="17" width="122" height="12" backcolor="#FFFFFF" uuid="41392b08-a091-438a-9adc-d83e8c51eefc"/>
-				<box>
-					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.25"/>
-					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.25"/>
-					<rightPen lineWidth="0.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="8" isBold="true"/>
-					<paragraph firstLineIndent="4"/>
-				</textElement>
-				<text><![CDATA[VALOARE TOTALA cu TVA]]></text>
-			</staticText>
-			<staticText>
-				<reportElement mode="Transparent" x="0" y="53" width="122" height="12" backcolor="#FFFFFF" uuid="d4dd98e6-f922-40fd-8561-521035be2c63"/>
+				<reportElement mode="Transparent" x="0" y="24" width="122" height="12" backcolor="#FFFFFF" uuid="d4dd98e6-f922-40fd-8561-521035be2c63"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -882,7 +812,7 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<text><![CDATA[TOTAL DEDUCERI]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="5" width="122" height="12" backcolor="#FFFFFF" uuid="039a95ec-d532-436f-80ad-11ea9dfd5b5f"/>
+				<reportElement mode="Transparent" x="0" y="0" width="122" height="12" backcolor="#FFFFFF" uuid="039a95ec-d532-436f-80ad-11ea9dfd5b5f"/>
 				<box>
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.25"/>
@@ -897,13 +827,28 @@ $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']")]]></dataSou
 				<text><![CDATA[VALOARE TOTALA  fara TVA]]></text>
 			</staticText>
 			<subreport isUsingCache="true">
-				<reportElement positionType="Float" x="0" y="101" width="581" height="10" isRemoveLineWhenBlank="true" uuid="7dfcc8c5-b298-4463-8167-bbfb7421b7bf"/>
+				<reportElement positionType="Float" x="0" y="72" width="581" height="10" isRemoveLineWhenBlank="true" uuid="7dfcc8c5-b298-4463-8167-bbfb7421b7bf"/>
+				<subreportParameter name="BT112">
+					<subreportParameterExpression><![CDATA[$F{BT112}]]></subreportParameterExpression>
+				</subreportParameter>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="BT115">
+					<subreportParameterExpression><![CDATA[$F{BT115}]]></subreportParameterExpression>
 				</subreportParameter>
 				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)
 $P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name()='TaxTotal']")]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_taxtotal.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport isUsingCache="true">
+				<reportElement positionType="Float" x="0" y="82" width="581" height="10" isRemoveLineWhenBlank="true" uuid="bf0f1422-ecf4-4b51-bfd7-20f57919577f"/>
+				<subreportParameter name="SUBREPORT_DIR">
+					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)
+$P{REPORT_DATA_SOURCE}).subDataSource("//*[local-name()='Invoice']/*[local-name()='PaymentMeans']")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "//factura_paymentmeans.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</summary>

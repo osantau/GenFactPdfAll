@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_delivery" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e045a7c1-edbc-412f-97fc-ab22c83f7f48">
 	<property name="ireport.zoom" value="2.0"/>
-	<property name="ireport.x" value="52"/>
+	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<parameterDescription><![CDATA[]]></parameterDescription>
@@ -60,6 +60,9 @@
 			</staticText>
 			<line>
 				<reportElement x="0" y="11" width="115" height="1" uuid="0146fdbd-71cd-4a24-bbfa-9a1c77fdc9b4"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
 			</line>
 			<staticText>
 				<reportElement x="0" y="12" width="40" height="10" isRemoveLineWhenBlank="true" uuid="7307da68-b98c-409a-8abc-274d2510b57c">

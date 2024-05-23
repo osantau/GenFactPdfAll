@@ -51,6 +51,9 @@
 			</staticText>
 			<line>
 				<reportElement x="0" y="11" width="108" height="1" uuid="1cf75337-b644-4e55-9b1c-ec8fa6a91063"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
 			</line>
 		</band>
 		<band height="10">

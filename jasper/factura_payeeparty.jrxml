@@ -34,6 +34,9 @@
 			</staticText>
 			<line>
 				<reportElement x="0" y="11" width="71" height="1" uuid="39ccedd2-c2ba-4fa4-9747-bab0a5249861"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
 			</line>
 		</band>
 		<band height="10">
