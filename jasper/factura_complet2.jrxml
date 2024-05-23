@@ -110,7 +110,7 @@
 				<reportElement mode="Transparent" x="0" y="154" width="581" height="16" backcolor="#CCCCCC" uuid="cb73477f-fba8-4cea-a53b-00ea718c6c7e"/>
 				<box>
 					<pen lineWidth="0.0" lineStyle="Solid"/>
-					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
